@@ -31,7 +31,6 @@ export const Header = () => {
                             <Nav.Link href="" onClick={() => { navigate(`/Shop`) }} > Shop</Nav.Link>
                             < Nav.Link href="" onClick={() => { navigate(`/contact`) }}> Contact </Nav.Link>
                             <Nav.Link href="" >Services</Nav.Link>
-                            <Nav.Link href="" >panier</Nav.Link>
                             <Modal className='' show={openModal} onClose={() => setOpenModal(false)}>
                                 <Modal.Header></Modal.Header>
                                 <Modal.Body>
