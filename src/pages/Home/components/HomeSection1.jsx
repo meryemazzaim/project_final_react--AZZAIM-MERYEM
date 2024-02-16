@@ -141,7 +141,7 @@ export const HomeSection1 = () => {
                             {/* <p className="text-sm text-gray-500 dark:text-gray-400">Content 1</p> */}
                             <div className="flex flex-row  gap-5 flex-wrap  overflow-hidden">
                                 <div  >
-                                    <div  className="h-70 w-[100%]  relative flex flex-col  items-center justify-center   ">
+                                    <div className="h-70 w-[100%]  relative flex flex-col  items-center justify-center   ">
                                         <img src={item1} width={350} alt="" />
                                         <Button className='absolute rounded-full py-2 px-2 bg-gray-900  text-white hover:bg-red-600 ' onClick={() => setOpenModal(true)}>ADD TO CART</Button>
                                         <Modal className='' show={openModal} onClose={() => setOpenModal(false)}>
@@ -177,7 +177,7 @@ export const HomeSection1 = () => {
                             </div>
                             <div className="flex flex-row  gap-5 flex-wrap  overflow-hidden">
                                 <div  >
-                                    <div  className="h-70 w-[100%]  relative flex flex-col  items-center justify-center   ">
+                                    <div className="h-70 w-[100%]  relative flex flex-col  items-center justify-center   ">
                                         <img src={item2} width={350} alt="" />
                                         <Button className='absolute rounded-full py-2 px-2 bg-gray-900  text-white hover:bg-red-600 ' onClick={() => setOpenModal(true)}>ADD TO CART</Button>
                                         <Modal className='' show={openModal} onClose={() => setOpenModal(false)}>
@@ -213,7 +213,7 @@ export const HomeSection1 = () => {
                             </div>
                             <div className="flex flex-row  gap-5 flex-wrap  overflow-hidden">
                                 <div  >
-                                    <div  className="h-70 w-[100%]  relative flex flex-col  items-center justify-center   ">
+                                    <div className="h-70 w-[100%]  relative flex flex-col  items-center justify-center   ">
                                         <img src={item3} width={350} alt="" />
                                         <Button className='absolute rounded-full py-2 px-2 bg-gray-900  text-white hover:bg-red-600 ' onClick={() => setOpenModal(true)}>ADD TO CART</Button>
                                         <Modal className='' show={openModal} onClose={() => setOpenModal(false)}>
@@ -249,7 +249,7 @@ export const HomeSection1 = () => {
                             </div>
                             <div className="flex flex-row  gap-5 flex-wrap  overflow-hidden">
                                 <div  >
-                                    <div  className="h-70 w-[100%]  relative flex flex-col  items-center justify-center   ">
+                                    <div className="h-70 w-[100%]  relative flex flex-col  items-center justify-center   ">
                                         <img src={item4} width={350} alt="" />
                                         <Button className='absolute rounded-full py-2 px-2 bg-gray-900  text-white hover:bg-red-600 ' onClick={() => setOpenModal(true)}>ADD TO CART</Button>
                                         <Modal className='' show={openModal} onClose={() => setOpenModal(false)}>
