@@ -58,26 +58,7 @@ export const SectionShop = () => {
 
 
     ])
-    const addProduct = () => {
-
-        let newProduct = {
-            title: productName,
-            price: productPrice,
-            image: item2
-        }
-
-        let newTab = [...myProduct]
-        newTab.push(newProduct)
-        setMyProduct(newTab)
-
-
-
-
-
-        setProductName("")
-        setProductPrice("")
-
-    }
+  
     const [screenArray, setScreenArray] = useState(myProduct)
     const filterElement = (event) => {
         let newTab = screenArray.filter(element => element.title.toLowerCase().includes(event.target.value.toLowerCase()));
@@ -93,25 +74,24 @@ export const SectionShop = () => {
         <>
 
 
-            <section>
+            <section className='sectionshop '>
                 <div className="flex flex-row pl-[15%] items-center justify-around ">
 
-                    {/* <input onChange={(e) => setProductName(e.target.value)} value={productName} placeholder='  product' className='w-23 py-2 outline-black' type="text" />
-                    <input onChange={(e) => setProductPrice(e.target.value)} value={productPrice} placeholder=' Add Size' className='w-23 py-2' type="number" /> */}
-                    {/* <button onClick={addProduct} className='px-5 py-2 rounded-full bg-red-400'>Add</button> */}
-                    <input onChange={(e) => filterElement(e)} placeholder='Insert name please' className='w-25 py-2  bg-transparent  outline-black focus:outline-sky-900' type="search" />
+                    <input onChange={(e) => setProductName(e.target.value)} value={productName} placeholder='  product' className='w-23 pt-1 outline-black outline' type="text" />
+                    <input onChange={(e) => setProductPrice(e.target.value)} value={productPrice} placeholder=' Add Size' className='w-23 py-1 outline' type="number" />
+                    <input onChange={(e) => filterElement(e)} placeholder='Insert name please' className='w-25 py-2  bg-transparent  outline outline-black focus:outline-sky-900' type="search" />
 
                     <p className='text-red-600'>Showing 1 to 6 of 8 items</p>
 
                 </div>
-                <div className=" h-[100vh] w-[100%]   flex flex-wrap justify-end  ">
+                <div className=" h-[100vh] w-[100%]   flex flex-wrap justify-end  sectshop ">
 
 
                     {
 
                         screenArray.map((element, index) =>
-                            <div key={index} className="h-[70vh] w-[calc(90%/3)] gap-2 flex flex-col ">
-                                <div  className="h-70 w-[100%]  relative flex flex-col  items-center justify-center   ">
+                            <div key={index} className="h-[70vh] w-[calc(90%/3)] gap-2 flex flex-col  ">
+                                <div  className="h-70 w-[100%]  relative flex flex-col  items-center justify-center    ">
                                     <img width={300} src={element.image} alt="" />
 
                                     <Button className='absolute rounded-full py-2 px-2 bg-gray-900  text-white hover:bg-red-600 ' onClick={() => setOpenModal(true)}>ADD TO CART</Button>
@@ -138,10 +118,9 @@ export const SectionShop = () => {
 
 
                                 </div>
-                                <div className=" flex flex-col items-center  justify-around h-30">
+                                <div className=" flex flex-col items-center  justify-around h-30 ">
                                     <h3>{element.title}</h3>
                                     <p>{element.price}</p>
-                                    {/* <button onClick={() => { changePrice(index) }}>Change Price</button> */}
                                 </div>
                             </div>
                         )
