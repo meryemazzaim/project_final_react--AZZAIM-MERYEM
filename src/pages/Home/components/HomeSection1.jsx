@@ -385,7 +385,7 @@ export const HomeSection1 = () => {
                 </div>
 
             </section >
-            <section>
+            <section className='card'>
 
 
                 <h1 className='text-center pt-5'>OUR BLOG</h1>
